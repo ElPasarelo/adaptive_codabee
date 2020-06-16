@@ -21,6 +21,15 @@ class Adaptive {
         : androidText(string: string, style: style, align: align);
   }
 
+  static Future alert({@required BuildContext context}) {
+    return showDialog(
+        context: context,
+      builder: (context) {
+          return isIOS() ? iOSErrorAlert(context: context): androidErrorAlert(context: context);
+      }
+    );
+  }
+
   //Android Material
   static Scaffold androidScaffold(String string, Widget body) {
     return Scaffold(
@@ -36,6 +45,25 @@ class Adaptive {
     );
   }
 
+  static androidErrorAlert({@required BuildContext context}) {
+    return AlertDialog(
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          text(string: "Une erreur est apparue"),
+        ],
+      ),
+      actions: <Widget>[
+        RaisedButton(
+          child: text(string: "OK"),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        )
+      ],
+    );
+  }
+
   //iOS Material
   static CupertinoPageScaffold iOSScaffold(String string, Widget body) {
     return CupertinoPageScaffold(
@@ -48,6 +76,21 @@ class Adaptive {
     return DefaultTextStyle(
       child: Text(string, textAlign: align ?? TextAlign.left,),
       style: style,
+    );
+  }
+
+  static iOSErrorAlert({@required BuildContext context}) {
+    return CupertinoAlertDialog(
+      content: Column(
+        children: <Widget>[
+          text(string: "Erreur")
+        ],
+      ),
+      actions: <Widget>[
+        CupertinoButton(child: text(string: "OK"), onPressed: () {
+          Navigator.of(context).pop();
+        })
+      ],
     );
   }
 
