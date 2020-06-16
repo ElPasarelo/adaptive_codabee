@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:adaptive_codabee/adaptivecodabee.dart';
+import 'package:adaptive_codabee/adaptive_codabee.dart';
 
 void main() {
   runApp(MyApp());

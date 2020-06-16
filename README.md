@@ -17,5 +17,5 @@ dependencies:
 Dans le fichier Dart, importez: 
 
 ```dart
-import'package:adaptive_codabee.adaptivecodabee.dart';
+import 'package:adaptive_codabee/adaptive_codabee.dart';
 ```
