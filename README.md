@@ -1,19 +1,21 @@
-# Flutter location Plugin
+# Adaptive Codabee
 
-Ce plugin est fait pour [Flutter](https://flutter.io)
-Il utilise le material design de iOS et Android pour s'adapter automatiquement à la plateforme.
+Apprendre à créer un package qui s'adapte selon l'OS utilisé.
+Ce package est destiné à la création d'applications [Flutter](https://flutter.io)
 
 ## Getting Started
 
-Pour ajouter ce package, dans le 'pubspec.yaml':
+Pour utiliser ce package, ajouter au `pubspec.yaml`:
 
 ```yaml
-dependencies: 
+dependencies:
     adaptive_codabee: ^0.0.1
 ```
 
 ## Usage
 
+Dans le fichier Dart, importez: 
+
 ```dart
-import 'package:adaptive_codabee/adaptivecodabee.dart';
+import'package:adaptive_codabee.adaptivecodabee.dart';
 ```
