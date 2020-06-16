@@ -1,8 +1,8 @@
-name: adaptivecodabee
+name: adaptive_codabee
 description: Apprendre à créer un package qui s'adapte selon l'OS utilisé
 version: 0.0.1
-author:
-homepage:
+author: Matthieu Passerel<matthieu@codabee.com>
+homepage: https://github.com/ElPasarelo/adaptive_codabee
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
