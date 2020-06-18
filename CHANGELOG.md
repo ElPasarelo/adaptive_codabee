@@ -1,3 +1,8 @@
+## [1.0.1] - 2020-06-18
+
+* Ajout de Screenshots readme.
+* Fonctions spécifiques privatisées.
+
 ## [1.0.0] - 2020-06-18
 
 * Ajout de documentation sur le code dart.
