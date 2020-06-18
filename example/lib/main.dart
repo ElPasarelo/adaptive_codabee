@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Center(child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            Adaptive.text(string: "${Adaptive.isIOS()}", color: Colors.pink),
+            Adaptive.text(string: "Ceci est notre app test", color: Colors.pink),
             Adaptive.button(child: Adaptive.text(string: "Erreur"), onPressed: () {
               Adaptive.alert(context: context, callback: () {
                 print("Success");
